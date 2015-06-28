@@ -20,7 +20,8 @@ The QTP step is designed to be executed on a Windows server using WinRM.  This p
 An example of VBS that might be useful is as follows:
 
 
-`Dim qtApp
+````
+Dim qtApp
 Dim qtTest
 
 'Create the QTP Application object
@@ -66,6 +67,7 @@ qtApp.quit
 
 'Release Object
 Set qtTest = Nothing
-Set qtApp = Nothing `
+Set qtApp = Nothing
+````
 
 The QTP step returns the standard out, standard error and exit code from the script.  You can use this information later in your release template to make decisions and manage the release.
